@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2406 A1</title>
+  <style>
+    /* Element selectors */
+
+    /* Set the background color for the entire body */
+    body {
+      background: #dddddd;
+    }
+
+    /* Style for normal text paragraphs */
+    p {
+      font-size: large;
+      font-weight: bold;
+      font-family: "Courier", Monospace;
+      color: blue;
+    }
+
+    /* Class selectors */
+
+    /* Style for chords */
+    .chord {
+      font-size: large;
+      font-weight: bold;
+      font-family: "Courier", Monospace;
+      color: rgb(0, 128, 0); /* Green color for chords */
+    }
+
+    /* Style for original chords (green) */
+    .original-chord {
+      font-size: large;
+      font-weight: bold;
+      font-family: "Courier", Monospace;
+      color: green;
+    }
+
+    /* Style for transposed chords (red) */
+    .transposed-chord {
+      font-size: large;
+      font-weight: bold;
+      font-family: "Courier", Monospace;
+      color: red;
+    }
+
+    /* ID selectors */
+
+  </style>
+</head>
+
+<body>
+  <div id="text-area">
+    <!-- Preformatted text content for the song -->
+    <pre id="song-content"></pre>
+  </div>
+  <br>
+  <!-- User input field -->
+  <input type="text" id="userTextField" name="userTextField" value="" size="60" />
+  <!-- Button to submit user requests -->
+  <input type="button" id="submit_button" value="Submit Request">
+
+  <!-- Transpose buttons -->
+  <p>
+    <!-- Button to transpose chords up -->
+    <input id="transposeUp" type="button" value="Transpose Up" />
+    <!-- Button to transpose chords down -->
+    <input id="transposeDown" type="button" value="Transpose Down" /> 
+  </p>
+
+  <!-- JavaScript script tags for external scripts -->
+  <!-- Load client-side JavaScript -->
+  <script src='client.js'></script>
+  <!-- Load jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Load chords-related JavaScript -->
+  <script src='chords.js'></script>
+  <!-- Load button handlers JavaScript -->
+  <script src='buttonHandlers.js'></script>
+  <!-- Load event listeners JavaScript -->
+  <script src='eventListeners.js'></script>
+</body>
+</html>
